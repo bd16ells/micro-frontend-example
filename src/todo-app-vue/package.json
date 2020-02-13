@@ -1,0 +1,14 @@
+{
+  "name": "Todo App - Vue",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "build": "webpack --config webpack.config.js -p"
+  },
+  "devDependencies": {
+  }
+}
