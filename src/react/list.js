@@ -13,11 +13,9 @@ export default class EventReceiver extends Component {
   componentDidMount() {
     window.addEventListener('todo:delete', (e) => {
         this.setState({deleted: [...this.state.deleted, e.detail.title]})
-        console.log(e.detail.title)
       });
     window.addEventListener('todo:complete', (e) => {
         this.setState({complete: [...this.state.complete, e.detail.title]})
-        console.log(e.detail.title)
       });
   }
 
@@ -25,7 +23,6 @@ export default class EventReceiver extends Component {
   render() {
     return (
         <div className="row ml-2">
-
             <div className="col-6">
                 <h3>deleted</h3>
                 <List vals={this.state.deleted} />

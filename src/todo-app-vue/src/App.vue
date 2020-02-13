@@ -13,7 +13,7 @@
 <script>
 import TodoList from './components/TodoList.vue'
 import CreateTodo from './components/CreateTodo.vue';
-import { sweetalert } from "sweetalert";
+import sweetalert from "sweetalert";
 export default {
   name: 'App',
   components: {
@@ -46,6 +46,7 @@ export default {
   },
    methods: {
     createTodo(newTodo) {
+      debugger
       this.todos.push(newTodo);
       sweetalert('Success!', 'To-Do created!', 'success');
     },

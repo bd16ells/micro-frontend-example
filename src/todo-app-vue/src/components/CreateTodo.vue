@@ -18,7 +18,7 @@
             <button class='ui basic blue button' v-on:click="sendForm()">
               Create
             </button>
-            <button class='ui basic red button' v-on:click="closeForm">
+            <button class='ui basic red button' v-on:click="closeForm()">
               Cancel
             </button>
           </div>
